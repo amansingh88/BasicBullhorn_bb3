@@ -5,23 +5,25 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Todo List</h1>
+<h1>Message Book</h1>
 <form action="#" th:action="@{/process}" th:object="${todo}" method="post">
     <input type="hidden" th:field="*{id}" />
 
-    Task Name: <input type="text" th:field="*{taskname}" />
+    Write here: <textarea rows="4" th:field="*{taskname}" />
     <span th:if="${#fields.hasErrors('taskname')}"
           th:errors="*{taskname}"></span><br/>
 
-    Due Date: <input type= "text" th:field="*{duedate}" />
+    Date: <input type= "date" th:field="*{duedate}" />
     <span th:if="${#fields.hasErrors('duedate')}"
           th:errors="*{duedate}"></span><br/>
 
-    Priority: <input type="text" th:field="*{priority}" />
+    Your Name: <input type="text" th:field="*{priority}" />
     <span th:if="${#fields.hasErrors('priority')}"
           th:errors="*{priority}"></span><br/>
 
-    <input type="submit" value="Submit" />
+    <input type="submit" value="Submit" /><br /><br />
+    <a href="/">Show all Messages</a><br/>
+
 
 </form>
 </body>

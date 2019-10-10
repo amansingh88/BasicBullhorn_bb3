@@ -23,7 +23,7 @@ public class Todo {
     private String duedate;
 
     @NotNull
-    @Size(min=3)
+    @Size(min=3, max=15)
     private String priority;
 
     public long getId() {
