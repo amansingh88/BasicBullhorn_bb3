@@ -9,7 +9,7 @@
         <meta http-equiv="x-ua-compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width",
               initial-scale="1" />
-        <title>Message Book</title>
+        <title>My Book</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -19,9 +19,9 @@
 <!--<a href="/add">Write a New Message</a><br/>-->
 
 <div class="jumbotron">
-    <h1 class="display-4" align="center">Message Book</h1>
+    <h1 class="display-4" align="center" data-th-bgcolor="blue">My Book</h1>
     <hr class="my-4">
-    <a class="btn btn-primary btn-lg" href="/add" role="button" >Write a New Message</a>
+    <a class="btn btn-primary btn-lg" href="/add" role="button" >Attach a new image</a>
 </div>
 
 <!--<table>-->
@@ -43,21 +43,14 @@
 <!--    </tr>-->
 <!--</table>-->
 
-<table class="table table-striped">
-    <thead>
-    <tr>
-        <th scope="col" >#</th>
-        <th scope="col" >Content</th>
-        <th scope="col" >Posted Date</th>
-        <th scope="col" >Sent By</th>
-    </tr>
-    </thead>
-    <tbody>
-
-
-
-    </tbody>
-</table>
+<div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Click to attach picture</a>
+    </div>
+</div>
 
 
 <th:block th:fragment="jslinks">
